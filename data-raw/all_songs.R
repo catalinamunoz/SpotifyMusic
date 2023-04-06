@@ -9,6 +9,13 @@ songs$Hit <- as.factor(songs$Hit)
 songs$key_mode<- as.factor(songs$key_mode)
 songs$mode_name <- as.factor(songs$mode_name)
 songs$key_name <- as.factor(songs$key_name)
+songs$duration_min <- as.double(songs$duration_min)
+songs$danceability <- as.double(songs$danceability)
+songs$energy <- as.double(songs$energy)
+songs$loudness <- as.double(songs$loudness)
+songs$speechiness<-as.double(songs$speechiness)
+songs$acousticness <- as.double(songs$acousticness)
+songs$instrumentalness <- as.double(songs$instrumentalness)
 
 # remove duplicates based on track id
 songs <- songs[!duplicated(songs$track.id), ]
